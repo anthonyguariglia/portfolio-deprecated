@@ -1,0 +1,116 @@
+@import '~bootstrap/scss/bootstrap';
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-page {
+  background: linear-gradient(180deg, rgba(73,71,129,1) 0%, rgba(109,157,204,1) 26%, rgba(255,255,255,1) 100%);
+}
+
+.name {
+  display: flex;
+  font-size: 6rem;
+  color: white;
+  justify-content: center;
+  margin-left: -12rem;
+}
+
+.last-name {
+  display: flex;
+  font-size: 6rem;
+  color: white;
+  margin-left: -4rem;
+  justify-content: center;
+}
+
+.filler-div {
+  height: 10rem;
+}
+
+.half-filler-div {
+  height: 5rem;
+}
+
+.large-heading {
+  font-size: 50px;
+  // margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.subheading {
+  display: flex;
+  margin: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  margin-left: -0.3rem;
+  font-size: 24px;
+}
+
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  margin: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.nav-items {
+  margin: 1rem;
+  padding: 1rem;
+
+  &:hover {
+    color: #b3b3b3;
+  }
+}
+
+.bullet {
+  justify-content: baseline;
+  padding-bottom: 12px;
+}
+
+.proficiencies {
+  font-size: 40px;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  width: 128px;
+  margin: 2rem;
+}
+
+img {
+  margin: 0 auto;
+}
+
+$height: 40vw;
+
+.about-text {
+  height: $height;
+  font-size: 2.75rem;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-me-text {
+  width: $height;
+  font-size: 1.7vw;
+  text-align: justify;
+  margin: 3rem;
+}
+
+.about-me-image {
+  margin: 40px;
+}
