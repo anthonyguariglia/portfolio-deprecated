@@ -3,7 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const Proficiencies = props => {
   return (
-    <Container fluid>
+    <Container fluid className='software-proficiencies'>
+      <Row className='half-filler-div'>
+      </Row>
       <Row className='filler-div'>
         <Col><p className='proficiencies'>Software Proficiencies</p></Col>
       </Row>
@@ -30,6 +32,10 @@ const Proficiencies = props => {
         <Col className='logos'>{<img src='https://icongr.am/devicon/python-original.svg?size=128' />}</Col>
         <Col className='logos'>{<img src='https://icongr.am/devicon/cplusplus-original.svg?size=128' />}</Col>
         <Col className='logos' />
+      </Row>
+      <Row className='half-filler-div'>
+        <Col>
+        </Col>
       </Row>
     </Container>
   )
