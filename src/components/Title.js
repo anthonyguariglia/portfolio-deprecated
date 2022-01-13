@@ -20,7 +20,10 @@ const Title = props => {
         <Row>
           <Col>
             <nav className='nav-bar'>
-              <li className='nav-items'>PROJECTS</li>
+              <li className='nav-items' onClick={() => {
+                console.log('scrolling')
+                window.scrollTo(0, 2650)
+              }}>PROJECTS</li>
               <li className='bullet'>.</li>
               <li className='nav-items'>RESUME</li>
               <li className='bullet'>.</li>

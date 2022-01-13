@@ -9,11 +9,13 @@ import About from '../components/About'
 import Proficiencies from '../components/Proficiencies'
 import SpotiFeed from '../components/SpotiFeed'
 import TicTacToe from '../components/TicTacToe'
-import { SpotiFeedModal, TicTacToeModal } from './modals'
+import PortfolioProject from '../components/Portfolio'
+import { SpotiFeedModal, TicTacToeModal, PortfolioModal } from './modals'
 
 const Layout = props => {
   const [spotiFeedModalShow, setSpotiFeedModalShow] = useState(false)
   const [ticTacToeModalShow, setTicTacToeModalShow] = useState(false)
+  const [portfolioModalShow, setPortfolioModalShow] = useState(false)
 
   return (
     <>
@@ -25,14 +27,25 @@ const Layout = props => {
           <p className=''>Projects</p>
         </div>
         <Row>
+
+          <Col className='project-box' onClick={() => setPortfolioModalShow(true)} >
+            <PortfolioProject />
+          </Col>
+          <PortfolioModal show={portfolioModalShow} onHide={() => setPortfolioModalShow(false)} />
+
+        </Row>
+        <Row>
+
           <Col className='project-box' onClick={() => setSpotiFeedModalShow(true)} >
             <SpotiFeed />
           </Col>
           <SpotiFeedModal show={spotiFeedModalShow} onHide={() => setSpotiFeedModalShow(false)} />
+
           <Col className='project-box' onClick={() => setTicTacToeModalShow(true)} >
             <TicTacToe />
           </Col>
           <TicTacToeModal show={ticTacToeModalShow} onHide={() => setTicTacToeModalShow(false)} />
+
         </Row>
         <Row className='filler-div'></Row>
       </Container>

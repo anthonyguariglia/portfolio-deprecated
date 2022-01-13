@@ -7,6 +7,24 @@ $marginImage: 0.38rem;
   padding: 10px !important;
 }
 
+.portfolio-project {
+  border: 2px solid #4e568e;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  // float: right;
+  // margin-right: 0.5rem;
+  background-color: white;
+  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+   
+  &:hover {
+    color: white;
+    background-color: #4e568e;
+    border-color: white;
+  }
+}
+
 .spotifeed {
   border: 2px solid rgba(179,179,179,1);
   width: 40vw;
@@ -15,11 +33,13 @@ $marginImage: 0.38rem;
   border-radius: 0.5rem;
   float: right;
   // margin-right: 0.5rem;
-  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out;
+  background-color: white;
+  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
    
   &:hover {
     // color: white;
     background-color: rgba(179,179,179,1);
+    border-color: black;
   }
 }
 
@@ -33,13 +53,13 @@ $marginImage: 0.38rem;
   border-radius: 0.5rem;
   float: left;
   // margin-left: 0.5rem;
-
-  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out;
+  background-color: white;
+  transition: 0.15s ease-in-out background-color, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
    
   &:hover {
     color: black;
     background-color: #beffbe;
-    // background-color: #5bb35b;
+    border-color: #5bb35b;
   }
 }
 
