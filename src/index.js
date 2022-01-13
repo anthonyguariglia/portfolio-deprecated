@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './css/index.scss'
-import './css/spotifeed.scss'
+import './css/projects.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App'
 import { BrowserRouter } from 'react-router-dom'
