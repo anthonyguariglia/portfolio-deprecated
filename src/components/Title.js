@@ -1,7 +1,13 @@
-import React from 'react'
+/* eslint-disable multiline-ternary */
+/* eslint-disable no-tabs */
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import Resume from '../shared/Resume'
 
 const Title = props => {
+  const [showResume, setShowResume] = useState(false)
+
   return (
     <>
       <Container fluid className='title-page'>
@@ -24,7 +30,7 @@ const Title = props => {
                 window.scrollTo(0, 2800)
               }}><a className='project-button' href='#'>PROJECTS</a></li>
               <li className='bullet'>.</li>
-              <li className='nav-items'><a className='project-button' href='#'>RESUME</a></li>
+              <li className='nav-items'><a className='project-button' href='#' onClick={() => setShowResume(true)}>RESUME</a><Resume show={showResume} onHide={() => setShowResume(false)}/></li>
               <li className='bullet'>.</li>
               <li className='nav-items' onClick={() => {
                 window.scrollTo(0, 3750)
@@ -35,8 +41,8 @@ const Title = props => {
         <Row>
           <Col>
             <div className='filler-div title-logo-holder'>
-              <a href='https://github.com/anthonyguariglia'><img className='title-logos' src='https://icongr.am/devicon/github-original.svg?size=40' /></a>
-              <a href='https://www.linkedin.com/in/anthonyguariglia/' ><img className='title-logos' src='https://i.imgur.com/axzogcf.png'/></a>
+              <a target='_blank' rel='noreferrer' href='https://github.com/anthonyguariglia'><img className='title-logos' src='https://icongr.am/devicon/github-original.svg?size=40' /></a>
+              <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/anthonyguariglia/' ><img className='title-logos' src='https://i.imgur.com/axzogcf.png'/></a>
             </div>
           </Col>
         </Row>

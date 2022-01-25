@@ -169,6 +169,16 @@ img {
   margin: 2rem;
 }
 
+.modal-dialog-centered {
+  // height: 90vh !important;
+  width: 72vh !important;
+  max-width: 670px !important;
+  // max-height: 90%;
+}
+
+.modal-content {
+}
+
 .name {
   display: flex;
   font-size: 6rem;
@@ -217,6 +227,22 @@ img {
   color: black;
   font-family: $name-font;
   font-weight: $light-weight;
+}
+
+.resume-image {
+  max-height: 90vh;
+  max-width: 48vw;
+  // margin: auto auto;
+  padding: 1rem;
+}
+
+.resume-link {
+  padding: 0;
+  margin: 0;
+}
+
+.resume-modal {
+  // width: 50vw;
 }
 
 .software-proficiencies {
