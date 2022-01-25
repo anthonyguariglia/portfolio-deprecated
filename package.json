@@ -1,13 +1,22 @@
 {
   "name": "portfolio",
   "private": true,
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "license": {
     "software": "GNU GPLv3",
     "content": "CC­BY­NC­SA 4.0"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.16.5",
+    "axios": "^0.25.0",
     "bootstrap": "^5.0.1",
+    "dotenv": "^14.2.0",
+    "fs": "^0.0.1-security",
+    "googleapis": "^39.2.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.14.3",
     "react": "^17.0.2",
@@ -15,7 +24,10 @@
     "react-dev-utils": "^12.0.0",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "^5.0.0"
+    "react-scripts": "^5.0.0",
+    "react-scroll-trigger": "^0.6.10",
+    "readline": "^1.3.0",
+    "stream": "^0.0.2"
   },
   "scripts": {
     "start": "PORT=7117 react-scripts start",

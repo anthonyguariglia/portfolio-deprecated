@@ -10,7 +10,9 @@ import Proficiencies from '../components/Proficiencies'
 import SpotiFeed from '../components/SpotiFeed'
 import TicTacToe from '../components/TicTacToe'
 import PortfolioProject from '../components/Portfolio'
+import Contact from '../components/Contact'
 import { SpotiFeedModal, TicTacToeModal, PortfolioModal } from './modals'
+import { Prev } from 'react-bootstrap/esm/PageItem'
 
 const Layout = props => {
   const [spotiFeedModalShow, setSpotiFeedModalShow] = useState(false)
@@ -28,26 +30,29 @@ const Layout = props => {
         </div>
         <Row>
 
-          <Col className='project-box' onClick={() => setPortfolioModalShow(true)} >
-            <PortfolioProject />
+          <Col className='project-box' >
+            <PortfolioProject showModal={setPortfolioModalShow} />
           </Col>
           <PortfolioModal show={portfolioModalShow} onHide={() => setPortfolioModalShow(false)} />
+
+          <Col className='project-box' >
+            <SpotiFeed showModal={setSpotiFeedModalShow} />
+          </Col>
+          <SpotiFeedModal show={spotiFeedModalShow} onHide={() => setSpotiFeedModalShow(false)} />
 
         </Row>
         <Row>
 
-          <Col className='project-box' onClick={() => setSpotiFeedModalShow(true)} >
-            <SpotiFeed />
-          </Col>
-          <SpotiFeedModal show={spotiFeedModalShow} onHide={() => setSpotiFeedModalShow(false)} />
-
-          <Col className='project-box' onClick={() => setTicTacToeModalShow(true)} >
-            <TicTacToe />
+          <Col className='project-box' >
+            <TicTacToe showModal={setTicTacToeModalShow} />
           </Col>
           <TicTacToeModal show={ticTacToeModalShow} onHide={() => setTicTacToeModalShow(false)} />
 
         </Row>
         <Row className='filler-div'></Row>
+      </Container>
+      <Container fluid className='contact'>
+        <Contact />
       </Container>
     </>
   )

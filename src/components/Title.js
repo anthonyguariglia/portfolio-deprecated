@@ -10,10 +10,10 @@ const Title = props => {
         </Row>
         <Row>
           <Col className='title'>
-            <h1 className='name'>Anthony</h1>
-            <h1 className='last-name'>Guariglia</h1>
+            <h1 className='name'><strong>ANTHONY</strong></h1>
+            <h1 className='last-name'><strong>GUARIGLIA</strong></h1>
             <div className='subheading'>
-              <p>Software Developer | Electrical Engineer</p>
+              <p className='title-details'>Software Developer | Electrical Engineer</p>
             </div>
           </Col>
         </Row>
@@ -21,19 +21,23 @@ const Title = props => {
           <Col>
             <nav className='nav-bar'>
               <li className='nav-items' onClick={() => {
-                console.log('scrolling')
-                window.scrollTo(0, 2650)
-              }}>PROJECTS</li>
+                window.scrollTo(0, 2800)
+              }}><a className='project-button' href='#'>PROJECTS</a></li>
               <li className='bullet'>.</li>
-              <li className='nav-items'>RESUME</li>
+              <li className='nav-items'><a className='project-button' href='#'>RESUME</a></li>
               <li className='bullet'>.</li>
-              <li className='nav-items'>CONTACT</li>
+              <li className='nav-items' onClick={() => {
+                window.scrollTo(0, 3750)
+              }}><a className='project-button' href='#'>CONTACT</a></li>
             </nav>
           </Col>
         </Row>
         <Row>
           <Col>
-            <div className='filler-div'></div>
+            <div className='filler-div title-logo-holder'>
+              <a href='https://github.com/anthonyguariglia'><img className='title-logos' src='https://icongr.am/devicon/github-original.svg?size=40' /></a>
+              <a href='https://www.linkedin.com/in/anthonyguariglia/' ><img className='title-logos' src='https://i.imgur.com/axzogcf.png'/></a>
+            </div>
           </Col>
         </Row>
         <Row className='half-filler-div'>

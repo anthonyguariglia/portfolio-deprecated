@@ -6,10 +6,10 @@ import { SpotiFeedModal } from '../shared/modals'
 
 const SpotiFeed = props => {
   const [modalShow, setModalShow] = useState(false)
-
+  // console.log(props)
   return (
     <>
-      <Container bsPrefix className='spotifeed' onClick={() => setModalShow(true)}>
+      <Container bsPrefix className='spotifeed' onClick={() => props.showModal(true)} >
         <Row>
           <Col>
             <p className='heading'>SpotiFeed</p>
