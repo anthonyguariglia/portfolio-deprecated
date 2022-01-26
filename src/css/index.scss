@@ -7,8 +7,13 @@ $name-font: 'Lato', serif;
 $light-weight: 300;
 $heavy-weight: 500;
 
+body {
+  font-family: $name-font !important;
+  font-weight: $light-weight;
+}
+
 .about-text {
-  height: $height;
+  // height: $height;
   font-size: 2.75rem;
   text-align: center;
   margin: 50px 0;
@@ -21,15 +26,20 @@ $heavy-weight: 500;
 
 }
 
-.about-me-text {
+.about-me-col {
   width: $height;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   text-align: justify;
-  margin: 3rem;
+  font-family: $name-font;
+  margin: 0 1rem !important;
+}
+
+.about-me-text {
+  // margin-right: 2rem;
 }
 
 .about-me-image {
-  margin: 40px;
+  // margin-left: 2rem;
 }
 
 .bullet {
@@ -146,7 +156,7 @@ img {
 
 .javascript {
   &:hover {
-    
+
   }
 }
 
@@ -171,7 +181,7 @@ img {
 
 .logos {
   display: flex;
-  width: 128px;
+  width: 7.5vw;
   margin: 2rem;
 }
 
