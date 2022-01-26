@@ -219,3 +219,24 @@ export const PortfolioModal = props => {
 
   )
 }
+
+export const OuiChatModal = props => {
+  return (
+    <Modal
+      {...props}
+      size='lg'
+      aria-labelledby='contained-modal-title-vcenter'>
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Oui Chat
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  )
+}

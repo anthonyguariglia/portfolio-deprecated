@@ -11,13 +11,15 @@ import SpotiFeed from '../components/SpotiFeed'
 import TicTacToe from '../components/TicTacToe'
 import PortfolioProject from '../components/Portfolio'
 import Contact from '../components/Contact'
-import { SpotiFeedModal, TicTacToeModal, PortfolioModal } from './modals'
+import OuiChat from '../components/OuiChat'
+import { SpotiFeedModal, TicTacToeModal, PortfolioModal, OuiChatModal } from './modals'
 import { Prev } from 'react-bootstrap/esm/PageItem'
 
 const Layout = props => {
   const [spotiFeedModalShow, setSpotiFeedModalShow] = useState(false)
   const [ticTacToeModalShow, setTicTacToeModalShow] = useState(false)
   const [portfolioModalShow, setPortfolioModalShow] = useState(false)
+  const [ouiChatModalshow, setOuiChatModalShow] = useState(false)
 
   return (
     <>
@@ -31,17 +33,22 @@ const Layout = props => {
         <Row>
 
           <Col className='project-box' >
+            <OuiChat showModal={setOuiChatModalShow} />
+          </Col>
+          <OuiChatModal show={ouiChatModalshow} onHide={() => setOuiChatModalShow(false)} />
+
+          <Col className='project-box' >
             <PortfolioProject showModal={setPortfolioModalShow} />
           </Col>
           <PortfolioModal show={portfolioModalShow} onHide={() => setPortfolioModalShow(false)} />
+
+        </Row>
+        <Row>
 
           <Col className='project-box' >
             <SpotiFeed showModal={setSpotiFeedModalShow} />
           </Col>
           <SpotiFeedModal show={spotiFeedModalShow} onHide={() => setSpotiFeedModalShow(false)} />
-
-        </Row>
-        <Row>
 
           <Col className='project-box' >
             <TicTacToe showModal={setTicTacToeModalShow} />

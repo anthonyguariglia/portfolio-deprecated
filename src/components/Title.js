@@ -27,13 +27,13 @@ const Title = props => {
           <Col>
             <nav className='nav-bar'>
               <li className='nav-items' onClick={() => {
-                window.scrollTo(0, 2800)
+                window.scrollTo(0, 2750)
               }}><a className='project-button' href='#'>PROJECTS</a></li>
               <li className='bullet'>.</li>
               <li className='nav-items'><a className='project-button' href='#' onClick={() => setShowResume(true)}>RESUME</a><Resume show={showResume} onHide={() => setShowResume(false)}/></li>
               <li className='bullet'>.</li>
               <li className='nav-items' onClick={() => {
-                window.scrollTo(0, 3750)
+                window.scrollTo(0, 4000)
               }}><a className='project-button' href='#'>CONTACT</a></li>
             </nav>
           </Col>
