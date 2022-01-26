@@ -6,8 +6,7 @@ export const SpotiFeedModal = (props) => {
     <Modal
       {...props}
       size='lg'
-      aria-labelledby='contained-modal-title-vcenter'
-      centered>
+      aria-labelledby='contained-modal-title-vcenter'>
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
           SpotiFeed
@@ -83,8 +82,7 @@ export const TicTacToeModal = props => {
     <Modal
       {...props}
       size='lg'
-      aria-labelledby='contained-modal-title-vcenter'
-      centered>
+      aria-labelledby='contained-modal-title-vcenter'>
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
           Tic Tac Toe
@@ -169,25 +167,76 @@ export const PortfolioModal = props => {
       {...props}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
-      centered
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+          Personal Software Portfolio
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        <Row>
+          <Col>
+            <h4 className='modaltitle'><i>Because templates are over rated!</i></h4>
+          </Col>
+        </Row>
+        <Row className='modal-text-content'>
+          <p>
+            Designed using React, this website is a portfolio piece in itself! As my time at General Assembly has waned, I chose to apply the new front-end techniques I have learned to design a modern, responsive representation of my work.
+          </p>
+        </Row>
+        <Row>
+          <Col className='small-images col-8'>
+            <img className='proficiencies-image' src='https://i.imgur.com/Jn8REAr.png' />
+          </Col>
+          <Col className='side-images col-4'>
+            <img className='contact-image' src='https://i.imgur.com/dpUx1uO.png' />
+            <img className='project-image' src='https://i.imgur.com/lh9QqGq.png' />
+          </Col>
+        </Row>
+        <Row className='modal-mid-text-content'>
+          <p>
+            I wanted to design something interactive, and something that at a glance looked like it was done professionally, without spending weeks on it. React offered a great way to do this, creating components for the major visual blocks and using the React-Bootstrap library for some of the more dynamic elements.
+          </p>
+          <p>
+            This website organizes each major visual block as a React component, and uses Modals for all of the pop-up display features. Additional styling is done in SCSS to add some flavor to the site. The finished product is a simple yet organized representation of my front-end skills, and of my creative design side as a whole.
+          </p>
+          <p>
+            Of course there is always room for improvement, so if you have any suggestions, please drop me a message in the contact section below. Any and all feedback is appreciated!
+          </p>
+        </Row>
+        <Row className='links'>
+          <Col className='github-div'>
+            <button className='gitHubPortfolioLink' onClick={() => window.open('https://github.com/anthonyguariglia/portfolio')}>
+              <img className='github' src='https://icongr.am/feather/github.svg?size=128' /><span className='gitHub-link'>GitHub Link</span>
+            </button>
+          </Col>
+        </Row>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
 
+  )
+}
+
+export const OuiChatModal = props => {
+  return (
+    <Modal
+      {...props}
+      size='lg'
+      aria-labelledby='contained-modal-title-vcenter'>
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Oui Chat
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
   )
 }
