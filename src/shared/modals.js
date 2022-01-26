@@ -1,3 +1,5 @@
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable indent */
 import React from 'react'
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap'
 
@@ -232,7 +234,54 @@ export const OuiChatModal = props => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-
+        <Row>
+          <Col>
+            <h4 className='modaltitle'>A simple instant-messaging app to use with friends</h4>
+          </Col>
+        </Row>
+        <Row className='modal-text-content'>
+          <p>
+            This application utilizes the Socket IO library to recreate the modern instant-messaging web app. A new user is able to register an account with the username and profile image of their choice, and will then be placed into Oui Chat&apos;s lobby screen, where they can create and name a room of their choosing. They are able to see the users who are currently registered (and online!) on the server, and manually add each user to their room. Once added, the users can utilize Socket IO&apos;s instant messaging capability to stay in touch. 
+          </p>
+        </Row>
+        <Row>
+          <Col className='small-images'>
+            <img className='playlist' src='https://i.imgur.com/iYyFjxv.png' />
+          </Col>
+        </Row>
+        <Row className='modal-mid-text-content'>
+          <p>
+            Although more technically advanced than anything I had done prior, the real challenge of this application was that it was done in a group of 5 students. As a group, we had 4 days to complete this project and all had to assign ourselves tasks to reach completion on time
+          </p>
+          <p>
+            Having some prior experience using the Agile Scrum methodology, I took on the role of Scrum Master for this group. I handled all processes related to managing tickets, creating and merging pull requests, resolving conflicts, and merging feature branches to both the development and main branches. Additionally, I took on issues spanning both the front and back end, and pushed out a significant number of features alongside my Scrum duties
+          </p>
+          <p>
+            To assist with the Scrum operations, a Kanban board was created using GitHub&apos;s &apos;projects&apos; tab feature. This allowed each of our team members to create issues for tasks that needed to be resolved, and for the group to track those issues through to completion. Relevant PRs were attached to each issue, and they were moved along from their respective repos (front or back end), to &apos;in progress&apos;, &apos;in review&apos;, and finally &apos;closed&apos;.
+          </p>
+        </Row>
+        <Row>
+          <Col className='small-images'>
+            <img className='playlist' src='https://i.imgur.com/wcVGidl.png?1' />
+          </Col>
+        </Row>
+        <Row className='modal-mid-text-content'>
+          <p>
+            The final ressult is a useful chat app that allows you to create chat rooms with your friends and instantly message with them. Feel free to create an account and check it out for yourself!
+          </p>
+        </Row>
+        <Row className='links'>
+          <Col>
+            <button className='deployedSite' onClick={() => window.open('https://ga-git-good.github.io/chat-app/')}>
+              <span>Deployed Site</span><img className='deployed' src='https://icongr.am/feather/link.svg?size=128' />
+            </button>
+          </Col>
+          <Col>
+            <button className='gitHubLink' onClick={() => window.open('https://github.com/ga-git-good/chat-app')}>
+              <img className='github' src='https://icongr.am/feather/github.svg?size=128' /><span>GitHub Link</span>
+            </button>
+          </Col>
+        </Row>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
