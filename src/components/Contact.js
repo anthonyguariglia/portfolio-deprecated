@@ -64,6 +64,7 @@ const Contact = () => {
         <a href='#' className='email-link'><button className='form-submit-button' type='submit'>Submit</button></a>
       </Form>
       <div className='filler-div' />
+      <div className='half-filler-div'></div>
     </section>
   )
 }

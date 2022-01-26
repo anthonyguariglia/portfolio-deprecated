@@ -222,8 +222,56 @@ span {
 .github {
   width: 3vw;
   float: left;
+  margin-left: 0;
+  max-width: 5vw;
 
   &:hover {
     color: white;
   }
+}
+
+.proficiencies-image {
+  height: 34vw;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+.contact-image {
+  height: 16.5vw;
+  margin: 0rem 1rem 0.5rem 0;
+  border-radius: 2vh;
+}
+
+.project-image {
+  height: 16.5vw;
+  margin: 0.5rem 1rem 0.5rem 0;
+  border-radius: 2vh;
+}
+
+.side-images {
+  padding: 0 !important;
+  padding-right: 0.5rem;
+}
+
+.gitHubPortfolioLink {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 2px solid black;
+  height: 5vw;
+  padding: 1vw;
+  width: 15vw;
+  border-radius: 1rem;
+  font-size: 22px;
+  text-align: center;
+}
+
+.gitHub-link {
+  vertical-align: middle;
+  width: 70%;
+}
+
+.github-div {
+  display: flex;
+  justify-content: center;
 }
